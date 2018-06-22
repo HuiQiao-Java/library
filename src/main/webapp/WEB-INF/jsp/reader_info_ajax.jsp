@@ -143,9 +143,9 @@
 
     function doCloseModal () {
         //把modal框中绑定的数据取消掉
-        console.log($('#myModal').data('data'));
+        // console.log($('#myModal').data('data'));
         $('#myModal').removeData();
-        console.log($('#myModal').data('data'));
+        // console.log($('#myModal').data('data'));
     }
 
     //保存更改之后的modal数据
@@ -209,7 +209,7 @@
 	function doGetObjects() {
 		//先把数据写死进行测试，之后在动态获取readerid
 		var params = {
-			readerid : 1501014102
+			readerid : ${reader.readerId}
 		}
 
 		var url = "user/readerinfo.do"

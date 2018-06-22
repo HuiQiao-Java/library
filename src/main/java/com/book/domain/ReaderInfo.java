@@ -16,10 +16,42 @@ public class ReaderInfo implements Serializable {
 	private String birth;
 	private String address;
 	private String telcode;
+	private String password;
+	private byte roletype;
+	private String salt;
+	private byte permmission;
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	@Override
 	public String toString() {
 		return "ReaderInfo [readerId=" + readerId + ", name=" + name + ", sex=" + sex + ", birth=" + birth
-				+ ", address=" + address + ", telcode=" + telcode + "]";
+				+ ", address=" + address + ", telcode=" + telcode + ", password=" + password + ", roletype=" + roletype
+				+ ", salt=" + salt + ", permmission=" + permmission + "]";
+	}
+	public byte getRoletype() {
+		return roletype;
+	}
+	public void setRoletype(byte roletype) {
+		this.roletype = roletype;
+	}
+	public String getSalt() {
+		return salt;
+	}
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+	public byte getPermmission() {
+		return permmission;
+	}
+	public void setPermmission(byte permmission) {
+		this.permmission = permmission;
+	}
+	public void setReaderId(Long readerId) {
+		this.readerId = readerId;
 	}
 	public Long getReaderId() {
 		return readerId;

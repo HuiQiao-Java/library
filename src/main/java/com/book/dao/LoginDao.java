@@ -4,9 +4,9 @@ import org.apache.ibatis.annotations.Param;
 
 public interface LoginDao {
 	
-	Integer isReader(@Param("id")Integer id,
+	Integer isReader(@Param("id")Long id,
 					 @Param("passwd")String passwd);
 	
-	Integer isAdmin(@Param("id")Integer id,
+	Integer isAdmin(@Param("id")Long id,
 					@Param("passwd")String passwd);
 }

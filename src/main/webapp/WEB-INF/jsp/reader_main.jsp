@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <html>
 <head>
-<title>${readercard.name}的主页</title>
+<title>${reader.name}的主页</title>
 <link rel="stylesheet" href="static/css/bootstrap.min.css">
 <script src="static/js/jquery-3.2.1.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
@@ -38,7 +38,7 @@ body {
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="reader_info.html"><span
-							class="glyphicon glyphicon-user"></span>&nbsp;${readercard.name}，已登录</a></li>
+							class="glyphicon glyphicon-user"></span>&nbsp;${reader.name}，已登录</a></li>
 					<li><a href="login.html"><span
 							class="glyphicon glyphicon-log-in"></span>&nbsp;退出</a></li>
 				</ul>

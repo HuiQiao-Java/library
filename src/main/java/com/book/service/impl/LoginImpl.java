@@ -13,12 +13,12 @@ public class LoginImpl implements LoginService {
 	LoginDao loginDao;
 
 	@Override
-	public boolean isAdmin(Integer id, String passwd) {
+	public boolean isAdmin(Long id, String passwd) {
 		return loginDao.isAdmin(id, passwd) > 0;
 	}
 
 	@Override
-	public boolean isReader(Integer id, String passwd) {
+	public boolean isReader(Long id, String passwd) {
 		return loginDao.isReader(id, passwd) > 0;
 	}
 
